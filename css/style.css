@@ -1,0 +1,102 @@
+:root {
+    --light: white;
+    --dark: black;
+    --background: #e5b3f9;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background); /* Colour can be changed to background-image, or something different */
+}
+
+header {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    width: 100%;
+    height: auto;
+    /* justify-content: space-around; This makes it central - Can be changed to space-between to split up segments */
+}
+
+.navbar {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    text-decoration: none;
+}
+
+.navbar ul {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0px;
+    padding: 0px;
+    display: inline;
+}
+
+.navbar ul li a {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+.navbar ul li button {
+    color: #fff;
+    text-decoration: none;
+    background: transparent;
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Add pointer cursor for better user experience */
+    outline: none; /* Remove default button focus outline */
+}
+
+.navbar li a:hover,
+.navbar ul li button:hover {
+    color: var (--light) /* Button background color on hover */
+}
+
+.navbar p {
+    align-self: flex-end;
+}
+
+.container1 {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+.container2 {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+.footer {
+    margin-bottom: 50px;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+  }
+  .footer a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent */
+  }
+  .fa-brands {
+    margin: 5px 10px; /* Add margin between icons */
+  }
+  
+  .fa-3x {
+    font-size: 2em; /* Increase the size of icons */
+  }

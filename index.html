@@ -7,23 +7,37 @@
     <meta name="author" content="Mag Millen-Dutka" />
     <title>Website Title</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Example font below for main banner-text section - change if different style desired -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <header class="header">
-      <navbar class="navbar">
-        <h2>Header title here</h2>
+    <header>
+      <div class="title-container">
+      <h2>Header title here</h2>
+      <h4>Optional Slogan</h4> <!-- Optional slogal to the right of the screen-->
+      </div>
+
+      <nav>
         <ul>
-          <li>Home</li>
-          <li>Second icon</li>
-          <li>Third icon</li>
-          <li>Fourth icon</li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#second">Second</a></li>
+          <li><a href="#third">Third</a></li>
+          <li><a href="#about">Fourth</a></li>
+          <!-- Add more links if needed -->
         </ul>
-        <p>Optional slogan</p>
-      </navbar>
+      </nav>
     </header>
 
-    <section class=jumbotron></section> <!-- Optional banner section under header-->
+  <!-- Optional banner section under header-->
+    <section class="banner">
+      <!-- If using large, styled text here - Style it so it stands out.. -->
+      <div class="banner-text">ENTRANCE MESSAGE OR LOGO OR BUTTON HERE</div>
+
+    </section>
+  
     <section class="container1">
       <div class="div1">
         <h3>Header</h3>
@@ -38,15 +52,18 @@
     </section>
 
     <footer class="footer">
-        <div class="icons">
-            <i><a href="#" class="fab fa-linkedin fa-2x"></a></i>
-            <a href="#" class="fab fa-twitter fa-2x"></a>
-            <a href="#" class="fab fa-instagram fa-2x"></a>
-            <a href="#" class="fab fa-tiktok fa-2x"></a>
-        </div>
-        <p>&copy; (name of website). All rights reserved.</p>
+      <div class="icons">
+        <i><a href="#" class="fab fa-linkedin fa-2x"></a></i>
+        <a href="#" class="fab fa-twitter fa-2x"></a>
+        <a href="#" class="fab fa-instagram fa-2x"></a>
+        <a href="#" class="fab fa-tiktok fa-2x"></a>
+      </div>
+      <p>&copy; (name of website). All rights reserved.</p>
     </footer>
     <script src="./assets/js/script.js"></script>
-    <script src="https://kit.fontawesome.com/b47cf5ff60.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/b47cf5ff60.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

@@ -1,7 +1,8 @@
 :root {
   --light: white;
   --dark: black;
-  --background: #e5b3f9;
+  --background: #4d4c4e;
+  --border: #a5a5a5;
 }
 
 * {
@@ -11,21 +12,24 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
   margin: 0px;
   padding: 0px;
   width: 100%;
   height: 100vh;
-  background-color: var(
-    --background
-  ); /* Colour can be changed to background-image, or something different */
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: var(--background);
+  /* background-color: var(--background); Colour can be changed to background-image, or something different */
 }
 
 header {
-  color: #fff;
   padding: 20px;
-  background: transparent;
+  background-color: var(--background);
+  color: var(--light);
+  border-bottom: solid 1px var(--light);
+  position: fixed; /* makes sure the header stays on screen when scrolling */
+  width: 100%;
+  /* background: transparent; */
 }
 
 .title-container {
@@ -46,13 +50,14 @@ nav ul {
 }
 
 nav ul li {
-  display: inline;
   margin-right: 20px;
+  display: inline;
 }
 
 nav ul li a,
 nav ul li button {
-  color: #fff;
+  color: var(--light);
+  text-shadow: rgb(75, 75, 75) 0px 0px 3px;
   text-decoration: none;
   background: transparent;
   border: none; /* Remove default button border */
@@ -62,7 +67,7 @@ nav ul li button {
 
 nav ul li a:hover,
 nav ul li button:hover {
-  color: #555; /* Button background color on hover */
+  color: #c35a1e; /* Button background color on hover */
 }
 .banner {
   margin: 0px;
@@ -84,23 +89,91 @@ nav ul li button:hover {
   align-items: center; /* This centers the text into the middle of the banner - removing it sends text/item to left side of banner */
   text-decoration: none;
   /* Font styling for the banner-text below this point */
-  font-size: 56px; 
+  font-size: 56px;
   font-weight: bolder;
   color: var(--dark);
   text-shadow: white 0px 0px 3px;
-  font-family: 'Protest Riot', sans-serif;
+  font-family: "Protest Riot", sans-serif;
 }
 
-.container1 {
-  margin: 0px;
-  padding: 0px;
-  display: flex;
+.containers-wrapper {
+  width: 100%; /* Take up 80% of the page width */
+  margin: 0 auto; /* Center the containers horizontally */
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center the containers horizontally */
+  text-align: center; /*optional styling to center text */
 }
 
+.container1,
 .container2 {
-  margin: 0px;
-  padding: 0px;
-  display: flex;
+  margin: 10px;
+  width: 100%;
+  height: 500px;
+  display: inline-flex; /* Display containers side by side */
+  /* justify-content: space-between; */
+}
+.containers-wrapper2 {
+  width: 100%; /* Take up 80% of the page width */
+  margin: 0 auto; /* Center the containers horizontally */
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center the containers horizontally */
+}
+.container3 {
+  margin: 10px;
+  width: 100%;
+  height: 300px;
+  display: inline-flex; /* Display containers side by side */
+}
+.containers-wrapper3 {
+  width: 100%; /* Take up 80% of the page width */
+  margin: 0 auto; /* Center the containers horizontally */
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center the containers horizontally */
+}
+.container4 {
+  margin: 10px;
+  width: 100%;
+  height: 300px;
+  display: inline-flex; /* Display containers side by side */
+}
+.div1,
+.div2,
+.div3 {
+  padding: 20px;
+  flex-grow: 1; /* Equal distribution of space */
+  border: 1px solid var(--border); /* Placeholder border */
+  box-sizing: border-box; /* Include padding and border in total width */
+  border-radius: 25px;
+  
+}
+/* Background colours for each individual contained div in main page section */
+.div1 {
+  background-color: #ffaedf;
+}
+.div2 {
+  background-color: chocolate;
+}
+.div3 {
+  background-color: lightblue;
+}
+
+.div4,
+.div5,
+.div6,
+.div7,
+.div8 {
+  margin-right: 10px;
+  padding: 20px;
+  color: var(--dark);
+  flex-grow: 1; /* Equal distribution of space */
+  background-color: var(--light); /* Placeholder background color */
+  border: 1px solid var(--border); /* Placeholder border */
+  box-sizing: border-box; /* Include padding and border in total width */
+  border-radius: 25px;
+}
+
+.div8 {
+  margin-right: 0; /* Remove margin from the last element to prevent extra space */
 }
 
 .footer {
